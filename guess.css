@@ -1,0 +1,87 @@
+
+::placeholder{
+    color: black;
+    font-weight: bolder;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.heading{
+    margin: 2rem;
+    text-align: center;
+}
+.container{
+    position: absolute;
+    height: 29rem;
+    width: auto;
+    margin: auto;
+    left: 65rem; 
+}
+.back{
+    background: url('guess.png') no-repeat center center/cover;
+    z-index: -1 ;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.guessField{
+    margin: 0.9rem 0;
+    width: 22rem;
+    padding: 0.8rem;
+    outline: none;
+    background: none;
+    border-radius: 0.5rem;
+}
+.submit{
+    position: relative;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    width: 10rem;
+    top: 2rem;
+}
+.cancel{
+    position: relative;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    width: 10rem;
+    top: -5.5rem;
+    left: 12rem;
+}
+.refresh{
+    position: relative;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    width: 10rem;
+    top: 3rem;
+    left: 6rem;
+}
+button{
+    outline: none;
+    background: black;
+    border: none;
+    color: white;
+    opacity: 0.7;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+@media (max-width: 480px){
+    .container{
+        left: 11rem;
+    }
+}
+@media (min-width: 480px) and (max-width: 720px){
+    .container{
+        left: 24rem;
+    }
+}
+@media (min-width: 720px) and (max-width: 1080){
+    .container{
+        left: 28rem;
+    }
+}

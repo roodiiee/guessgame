@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="guess.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/78c6d57774.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 class="heading head">The Game is About to Guess The Number.</h1>
+    <div class="container back">
+        <!-- <i class="fa fa-window-close" id="close"></i> -->
+        <div class="heading">
+            <h1>बूझो तो जानें(Guess It)</h1>
+        </div>
+        <div class="text">
+            <input type="text" class="guessField" placeholder="Guess The Number" id="guessField" value="">
+            <input type="text" class="guessField" placeholder="Right Answer Will Appear Here" id="guessFieldd" value="" disabled>
+            <button class="submit" id="submit">GUESS??</button>
+            <button onclick="refresh()" class="refresh" id="refresh">Refresh</button>
+            <button onclick="cancel()" class="cancel" id="cancel">Cancel</button>
+        </div>
+    </div>
+    <script src="guess.js"></script>
+</body>
+
+</html>
